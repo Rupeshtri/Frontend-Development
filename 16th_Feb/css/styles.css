@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #0E3A36;
+
+}
+.l{
+    float: left;
+}
+.r{
+    float: right;
+}
+.clc{
+    clear: both;
+}
+.con{
+    width: 1000px;
+    margin: auto;
+    background-color: white;
+}
+nav{
+    background-color: #AA875D;
+    line-height: 50px;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+}
+nav ul li a{
+    color: brown;
+    text-decoration: none;
+    padding: 5px;
+    border-right: 1px solid #ccc;
+}
