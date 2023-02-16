@@ -1,0 +1,33 @@
+.b{
+  border: 1px solid #000; 
+  background: #ccc; 
+  padding: 5px; 
+  margin: 5px;
+}
+.ab{
+  text-align: right;
+}
+.l{
+    float: left;
+} 
+.r{
+    float: right;
+}
+.banner{
+    padding: 10%; 
+    text-align: center;
+}
+.cc{
+    clear: both;
+}
+
+.c{
+    height: 80px;
+    text-align: left ;
+    
+}
+.d{
+    padding: 10%;
+    width: 149px;
+
+}
