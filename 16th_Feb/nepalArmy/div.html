@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       body{
+        background-color:#000;
+       }
+       .mainbox{
+        width: 1000px;
+        height: 1000px;
+        background-color: #920101;
+        margin: auto;
+       }
+       .l{ float: left;}
+       .r{ float: right;}
+       .clc{clear: both;}
+
+       .left {
+        margin: 5px 5px;
+        height: 100%;
+        width: 450px;
+        border: 1px solid #fff;
+        float: left;
+       }
+       .right{
+        margin: 5px 5px;
+        height: 100%;
+        width: 450px;
+        border: 1px solid #fff;
+        float: right;
+       }
+       .br{border: 2px solid #fff;}
+       .a{
+        width: 40%;
+        height: 500px;
+        background: green;
+       }
+       .b{
+        width: 60%;
+        height: 500px;
+        background: rgb(37, 83, 37);
+       }
+       .aa{
+        width: 40%;
+        height: 200px;
+        background: red;
+        margin:5px 2px;
+       }
+       .bb{
+        width: 50%;
+        height: 200px;
+        background: red;
+        margin:5px 2px;
+       }
+       .ab{
+        height: 100px;
+        width: 100%;
+        background-color: red;
+        
+       }
+       .b-first{
+        background-color: red;
+        width: 30%;
+        height: 492px;
+        margin: 4px;
+       }
+       .down-left{
+        background-color: red;
+        height: 200px;
+        width: 100%;
+        margin-top: 10px;
+       }
+       .down-right-1{
+        background-color: red;
+        height: 500px;
+        width: 30%;
+        margin: 7px;
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="mainbox">
+        <div class="left">
+            <div class="l a br">
+                <div class="l aa br"></div>
+                <div class="r bb br" ></div>
+                <div class="clc ab br"></div>
+                <div class="ab br"></div>
+            </div>
+            <div class="r b br">
+                <div class="br l b-first"></div>
+                <div class="br l b-first"></div>
+                <div class="br l b-first"></div>
+
+            </div>
+            <div class="down-left clc br"></div>
+            <div class="down-left  br"></div>
+
+        </div>
+        <div class="right">
+            <div class="ab br"></div>
+            <div class="l aa br"></div>
+            <div class="r bb br"></div>
+            <div class="clc ab br"></div>
+            <div class="down-right-1 l  br"></div>
+            <div class="down-right-1 l  br"></div>
+            <div class="down-right-1 l  br"></div>
+
+
+                
+            
+        </div>
+    </div>
+</body>
+</html>
