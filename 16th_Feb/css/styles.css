@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=PT+Sans&family=Rubik+Gemstones&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
-*{
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=PT+Sans&family=Rubik+Gemstones&family=Source+Sans+Pro:wght@200&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+    
+
+*{ margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
     background: #0E3A36;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .l{
     float: left;
@@ -18,40 +19,60 @@ body{
     clear: both;
 }
 .con{
-    width: 1000px;
+    width: 1200px;
+    height: 3500px;
     margin: auto;
     background: white;
 }
+.con img{
+    display: block;
+}
 nav{
     background-color: #AA875D;
-    line-height: 50px;
+    line-height: 30px;
+    
 
 }
 nav ul li{
     list-style: none;
     display: inline;
+    margin-left: 8px;
 }
 nav ul li a{
-    color: brown;
+    color: rgb(109, 17, 17);
+    font-weight: bold;
     text-decoration: none;
-    padding: 5px;
-    border-right: 1px solid #ccc;
+    padding: 6px;
+    border-right: 1px solid brown;
 }
 .left{
     width: 70%;
-}
-.right{
-    width: 30%;
-    background: #fff;
+   
+    color: #fff;
+   padding: 3px;
+    
 }
 .caption{
     background-color: #1D3E1E;
-    color: white;
-    padding: 20px;
 }
-.caption h4{
-    border-bottom: 2px solid #fff;
+.left h4  {
+    padding: 9px;
+    
 }
+.left   p{
+    padding: 9px;
+    
+}
+.left h4{
+    border-bottom: 1px solid;
+}
+.right{
+    width: 30%;
+    background: #FAFAFA;
+    padding: 4px;
+}
+
+
 .rbox{
     border: 1px solid #ccc;
     
@@ -82,3 +103,61 @@ padding: 10px;
     
     
 }
+.layout-column{
+    width: 70%;
+   
+    background-color: #fff;
+    padding: 8px;
+    margin: 3px 0px;
+}
+.feature1{
+    background-color: #FAFAFA;
+    width: 50%;
+    padding: 9px;
+    border:1px solid #ccc;
+    border-top:5px solid #096415;
+    
+ }
+ .feature1 h6 {
+    margin: 5px;
+    
+    border-bottom: 1px solid #ccc;
+ }
+ .fcolumn h5 {
+    margin: 5px;
+    
+    border-bottom: 1px solid #ccc;
+ }
+ .block{
+    width: 325px;
+    height: 60px;
+    margin-top: 9px;
+    
+ }
+ .column1{ 
+    width: 63px;
+
+ }
+ .column1 img{
+    width: 150%;
+    display: block;
+
+ }
+ 
+ .column2{
+    width: 210px;
+    border-bottom: 1px solid #ccc;
+   
+
+ }
+ .column2 p{
+   
+ }
+ .top h5{
+    color: #fff;
+    background-color: #096415;
+    width: 120px;
+    padding: 8px;
+ }
+ 
+ 
