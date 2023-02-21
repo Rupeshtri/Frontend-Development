@@ -175,3 +175,26 @@ header nav ul{
     width: 20%;
     margin:  10px;
 }
+footer{
+    background: #E9E2D8;
+    padding: 20px;
+    margin-top: 30px;
+}
+.ff{
+    /* text-align: center; */
+    padding: 20px;
+}
+.ff h4{
+    margin:10px ;
+}
+.ff li{
+    list-style: none;
+    margin: 10px;
+    color:   #807e7e;
+    font-size: 15px;
+}
+.copyright{
+    color:#807e7e ;
+    text-align: center;
+    font-size: 13px;
+}
