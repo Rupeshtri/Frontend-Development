@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav li{
+            display: inline; 
+            position: relative;
+        }
+        .dropdown li{
+            display: block;
+        }
+        .dropdown{
+            position: absolute;
+            top:100% ;
+            left:0 ;
+            display: none;
+        }
+        li:hover .dropdown{
+            display: block;
+        }
+        .sub{
+            position: absolute;
+            top: 0;
+            left: 100%;
+            display: none;
+        }
+        .dropdown:hover  .sub{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a>
+                    <ul class="dropdown">
+                        <li><a href="">Mission</a>
+                        <ul class="sub">
+                            <li><a href="">abcdek</a> </li>
+                            <li><a href="">abcdek</a></li>
+
+                        </ul></li>
+                        <li><a href="">Vision</a></li>
+
+                    </ul>
+            </li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact Us</a></li>
+
+          
+
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1900px;
+        }
+        .box1{ width: 200px; 
+            height: 200px; 
+            background: red;
+            
+            top: 0;
+            left: 0;
+            position: sticky;
+        }
+        .box2{ width: 200px;
+             height: 200px;
+              background: blue;
+            position: fixed;
+            right: 50%;
+            bottom: 50%;
+            }
+            .box3{
+                height: 200px;
+                width: 200px;
+                background:rgb(65, 2, 65);
+                position: absolute;
+                right: 0%;
+                top: 0px;
+            }
+            .box4{
+                height: 200px;
+                width: 200px;
+                background:purple;
+                position: sticky;
+                left: 200px;
+                top: 100px;
+               
+            }
+            .a{ height: 30px;
+            width: 30px;
+            border: 1px solid #000;
+            background: #fff;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: ;
+        }
+        .aa{
+            height: 30px;
+            width: 30px;
+            
+            background: pink;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        .r{
+            height: 300px;
+            width: 300px;
+            
+            background: pink;
+            position: relative;
+            left: 10px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="box1">
+            <div class="a"></div>
+            <div class="aa"></div>
+        </div>
+        <div class="box2">
+            <div class="a"></div>
+            <div class="aa"></div>AA
+        </div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+       <div class="r"></div>
+       <div class="rr"></div>
+
+
+    
+</body>
+</html>

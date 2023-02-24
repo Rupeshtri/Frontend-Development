@@ -6,33 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .con{
-            background: pink;
-            
-            height: 500px;
-            display: flex;
-            
-           
-        }
-        .box{
-            
-            background-color: skyblue;
-            border: 1px solid #000;
-            padding: 30px;
-        
-
-        }
-        .a{ flex-basis: 300px; 
-            align-self: start;
-        }
-        .b{
-            flex-grow: 1;
-            align-self: center;
-        }
-        .c{
-            flex-grow: 2;
-            align-self: end;
-        }
+        .con{height: 50vh; background: pink; display: flex;}
+        .box{  background-color: skyblue; border: 2px solid #000;}
+        .a{ flex-basis: 200px; align-self: start; order: 2;}
+        .b{ flex-grow: 2; align-self: center; order:3 ;}
+        .c{ flex-grow: 1; align-self: end; order: 1;}
     </style>
 </head>
 <body>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: #93BFCF;
+        }
+        .con{
+            width: 1200px;
+            margin: auto;
+        }
+        
+        header{
+            background: #6196B4;
+            height: 15vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        nav li{
+            padding: 5px;
+        }
+        nav a{
+            text-decoration: none;
+           
+        }
+        nav li{
+            list-style: none;
+            position: relative;
+        }
+        nav ul{
+           padding: 10px;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+           
+        
+        }
+        .dropdown{
+            background:rgb(110, 182, 211) ;
+            color: #fff;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display:none ;
+            
+        }
+        nav .dropdown li:hover{
+            background:rgb(146, 201, 223) ;
+        }
+        nav ul  li:hover{
+            background: rgb(110, 182, 211);
+            border-radius: 3px;
+           
+            
+        }
+        .drop {
+            position: absolute;
+            top: 0%;
+            left: 100%;
+            display: none;
+           /*  */
+        }
+        
+        nav .drop li:hover{
+            background: rgb(110, 182, 211) ;
+        }
+            
+        
+        nav ul li:hover .dropdown{
+            display: block;
+            border-radius: 3px;
+            
+        }
+        .dropdown :hover .drop{
+            display: block;
+            background: skyblue;
+        }
+        .down{
+            position: absolute;
+            top: 0;
+            left: 100%;
+            display: none;
+            
+        }
+        .dropdown :hover .down{
+            display: block;
+            background: skyblue;
+        } 
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header class="con">
+        <div class="logo">LOGO</div>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">PROFILE</a>
+                <ul class="dropdown">
+                    <li><a href="">Friends</a>
+                    <ul class="drop">
+                        <li><a href="">Fallono</a></li>
+                        <li><a href="">Diskano</a></li>
+                        <li><a href="">Kano</a></li>
+
+                    </ul></li>
+                    <li><a href="">Followers</a>
+                    <ul class="down">
+                        <li><a href="">dorem</a><li>
+                        </li><a href="">lorem</a></li>
+                    </ul></li>
+
+                </ul></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">SERVICES</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
