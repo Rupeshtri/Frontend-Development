@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav li { display: inline; position: relative;}
+        .drop{ position: absolute; top: 100%; left: 0; display: none;}
+        .drop li{ display: block; }
+        li:hover .drop{ display: block;}
+        .sub{position: absolute; top: 0; left: 100%; display: none;}
+        .drop li:hover .sub{ display: block;}
+        .sub1{ position:absolute; top: 30%; left: 100%; display: none;}
+        .sub li:hover .sub1{ display: block;}
+    </style>
+</head>
+<body>
+   <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Profile</a>
+            <ul class="drop">
+                <li><a href="">Friends</a>
+                <ul class="sub">
+                    <li><a href="">Ram</a> 
+                    <ul class="sub1">
+                        <li><a href="">address</a></li>
+                        <li><a href="">age</a></li>
+
+                    </ul></li>
+                    <li><a href="">Shyam</a></li>
+                    <li><a href="">Hari</a></li>
+                </ul></li>
+                <li><a href="">Followers</a></li>
+
+            </ul></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">About Us</a></li>
+
+        </ul>
+    </nav>
+
+</body>
+</html>

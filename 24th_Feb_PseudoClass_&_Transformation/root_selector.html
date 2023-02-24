@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>root_Selector</title>
+    <style>
+        *{margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 1000px;
+            margin: auto;
+            
+        }
+
+        :root{
+            --primaryColor:#166FE5;
+            --secondaryColor:#36A420;
+            --w: #fff;
+            --width: 200px;
+            --h: 50px;
+           --font1: Arial, Helvetica, sans-serif;
+           
+           --font2: 'Times New Roman', Times, serif;
+        }
+
+        h1{
+            background: var(--primaryColor);
+            color: var(--w);
+            width: var(--width);
+            height: var(--h);
+            font-family: var(--font1);
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            margin-top: 50px;
+        }
+        p{
+            background: var(--primaryColor);
+            color: var(--w);
+            height: var(--width);
+            font-family: var(--font2);
+            padding: 30px;
+            border-radius: 0 0 5px 5px;
+            margin: 2px 0;
+            
+        }
+        .send{
+            background: var(--secondaryColor);
+            color: var(--w);
+            padding:4px 10px;
+            font-family: var(--font1);
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        .c{
+            background: rgb(253, 0, 0);
+            color: var(--w);
+            padding:4px 10px;
+            font-family: var(--font1);
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+        .send:hover{
+            color:var(--w);
+            background:  #52eb34;
+        }
+        .send:active{
+            color: red;
+            background: var(--secondaryColor);
+        }
+        .c:hover{
+            color: var(--w);
+            background: rgb(194, 2, 2);
+        }
+        .c:active{
+            color: red;
+            background: var(--primaryColor);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illo velit fugiat dolorem atque a labore voluptas, unde expedita ea maiores officiis eligendi deleniti, soluta eum impedit aperiam perspiciatis dignissimos!
+    Nisi rerum molestiae temporibus numquam voluptate rem in illum animi doloremque officia quam, assumenda laudantium culpa at totam repellendus qui pariatur est quasi. Inventore vel sit impedit in. Dolorum, consequuntur.
+    Quae, ea praesentium nihil eveniet alias officia, nobis architecto veritatis laudantium eius voluptatem dolorum cum porro ipsa eligendi sed eaque voluptates maxime eum dignissimos exercitationem similique distinctio esse! Repellat, iure. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, id praesentium reprehenderit quod sapiente aut corrupti alias sequi expedita accusamus!</p>
+   <button class="send">Send</button><button class="c">Cancel</button>
+</body>
+</html>

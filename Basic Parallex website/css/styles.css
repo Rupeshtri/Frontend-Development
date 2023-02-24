@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size: 16px;
+    font-weight: 400;
+}
+.pic1, .pic2, .pic3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    /* background-clip: cover; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   /* fixed = parallax
+   scrool = normal */
+}
+
+.pic1{ 
+    
+    min-height: 600px;
+    
+    background-image: url('../image/city.jpg');
+}
+.pic2{
+    min-height: 500px;
+    background-image: url('../image/pexels-pixabay-290595.jpg'); 
+
+}
+.pic3{
+    min-height: 500px;
+    background-image: url('../image/pexels-burst-374844.jpg');
+    }
+
+    
+
+
+.para{
+    text-align: center;
+    padding: 50px 80px;
+}
+.para-light {
+    background-color: #f4f4f4;
+    color: #777676;
+    
+    
+}
+
+.para-dark {
+    background-color: #282e34;
+    color: #ddd;
+   
+    
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    letter-spacing: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+.ptext .trans{
+    background-color: transparent;
+}

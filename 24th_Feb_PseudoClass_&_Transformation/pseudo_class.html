@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:first-child{ background:grey !important ;}
+        p:last-child{
+            background: skyblue;
+        }
+        p:nth-child(2){ background: pink;}
+        p:nth-child(odd){background: green;}
+        p:nth-child(even){background: purple;}
+        a:visited{ color: red;}
+        a:link{ color:yellow;}
+        a:hover{ color: pink;}
+        a:active{ color: green;}
+        input:disabled{ background: pink !important;}
+        input:read-only{ background: skyblue;}
+        input:required{ border: 2px solid red;}
+
+        :root{
+            --primary-color: red;
+            --secondary-color: brown;
+            --w:#fff;
+            --width: 500px;
+        }
+
+        h1{
+            background: var(--primary-color);
+            color: var(--w);
+            width: var(--width);
+            height: var(--width);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello this is demo</h1>
+    <input type="text" value="Rupesh" disabled>
+    <input type="text" value="sagar" readonly>
+    <input type="text" value="rood" required>
+    <a href="https://de-de.facebook.com/">Facebook</a>
+    <a href="google.com">Google</a>
+    <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+
+    </div>
+</body>
+</html>
