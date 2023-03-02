@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .con{background: skyblue; display: grid;
-        grid-template-columns: auto  auto auto;
+        /* .con{background: skyblue; display: grid;
+        grid-template-columns: auto  auto auto 100px 100px;
         gap: 20px;
         }
         .box{
@@ -19,9 +19,25 @@
         .c{grid-column: 2/3;}
         .d{grid-column: 2/3; grid-row: 3;} 
         .e{grid-column: 2/3; grid-row: 4;}
+        .f{grid-column: 3/4; grid-row: 2/5;}
+        .g{grid-row: 2/4; grid-column: 4/5;}
+        .h{ grid-column: 4/5;}
+        .i{ grid-row: 2/5;} */
+.box{ border: 1px solid #000; padding: 40px; background: violet;}
+.con{ display: grid; grid-template-columns: auto auto auto 100px 100px ;}
+.a{ grid-row: 1/5;}
+.b{ grid-column: 2/6;}
+.c{grid-column: 2/3; grid-row: 2;}
+.d{grid-column: 2/3; grid-row: 3;}
+.e{grid-column: 2/3; grid-row: 4;}
+.f{ grid-column: 3/4; grid-row:2/5};
+.g{grid-row: 2/4; grid-column: 4/5;}
+.h{grid-row: 4/5;}
+.i{ grid-row: 2/5;}
     </style>
 </head>
 <body>
+  
     <div class="con">
         <div class="box a">A</div>
         <div class="box b">B</div>
@@ -32,6 +48,23 @@
         <div class="box g">G</div>
         <div class="box h">H</div>
         <div class="box i">I</div>
+
+
+
+
+
+    </div>
+  
+    <!-- <div class="con">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+        <div class="box g">G</div>
+        <div class="box h">H</div>
+        <div class="box i">I</div> -->
         
 
     </div>
