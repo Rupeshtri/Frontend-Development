@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{ display: grid; gap: 10px;
+        grid-template-areas: 'a a a a b' '. c d e .' 'f f g g g';}
+        .box{ border: 1px solid #000; padding: 40px; background: skyblue;} 
+        .a{grid-area: a;} .b{grid-area: b;} .c{grid-area: c;}
+        .d{grid-area: d;} .e{grid-area: e;} .f{grid-area: f;}
+        .g{grid-area: g;} 
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+        <div class="box g">G</div>
+        
+    </div>
+</body>
+</html>
