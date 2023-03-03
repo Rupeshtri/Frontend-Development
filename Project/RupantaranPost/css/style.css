@@ -66,3 +66,29 @@ max-width:70% ;
 margin: auto;
 text-align: center;
 }
+
+.block-grid{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    gap: 30px;
+    margin-top: 20px;
+}
+.g-2{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+.block2{
+    margin-top: 20px;
+    background: #EBE3E3;
+}
+.g-3{
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    gap: 30px;
+}
+.g-3{
+    margin: 20px 0;
+}
