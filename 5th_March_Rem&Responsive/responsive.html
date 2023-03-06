@@ -6,21 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @media screen and (max-width: 480px){
-            body{
-                background: pink;
-            }
+       @media (max-width:480px){
+        body{
+            background: green;
         }
-        @media (min-width:481px) and (max-width:768px){
-            body{
-                background: skyblue;
-            }
+       }
+       @media (min-width:481px) and (max-width:768px) {
+        body{ background: pink;}
+       }
+       @media (min-width:769px) and (max-width:992px){
+        body{ background: rebeccapurple;}
+       }
+
+       @media (min-width:993px){
+        body{
+            background: black;
         }
-        @media (min-width:769px) and (max-width:992px){
-            body{
-                background: blue;
-            }
-        }
+       }
+        /* no use */
+       /* @media (orintation:landscape){
+        body{ background: brown;}
+       }
+       @media (orintation:portrait){
+        body{ background: blue;}
+       } */
     </style>
 </head>
 <body>
