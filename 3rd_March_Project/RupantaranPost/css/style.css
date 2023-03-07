@@ -110,3 +110,30 @@ text-align: center;
 .g-r h3{
     font-size: 20px;
 }
+
+
+/* Responsive  */
+@media (max-width:480px){
+    article h1{
+        max-width: 75%;
+        margin: auto;
+        font-size: 30px;
+        
+        font-weight: bold;
+        padding: 10px 0;
+        }
+    .block-grid{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        margin-top: 10px;
+        }
+
+    .block2 .g-3 , .g-4{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 30px;
+        margin: 20px 0;
+    }
+        
+}
