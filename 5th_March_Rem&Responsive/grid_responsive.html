@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{ background: green; padding: 100px;}
+        .box1{background: greenyellow; padding: 80px;}
+        @media (min-width:792px){
+            .g{display: grid; grid-template-columns: auto auto auto; gap: 10px; margin: 10px 0;}
+        }
+
+        @media (min-width: 480px) and (max-width:792px){
+            .gbox{display: grid; grid-template-columns: 30% 70%; gap: 10px; margin: 10px 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="g">
+        <div class="gbox">
+            <div class="box1"></div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, aspernatur!</p>
+        </div>
+        <div class="gbox">
+            <div class="box1"></div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, aspernatur!</p>
+        </div>
+        <div class="gbox">
+            <div class="box1"></div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, aspernatur!</p>
+        </div>
+    </div>
+</body>
+</html>
