@@ -1,0 +1,57 @@
+@import 'header';
+
+@mixin abc($ww, $hh, $bb:yellow)
+{
+    width: $ww;
+    height:$hh;
+    background: $bb;
+}
+.left{
+    @include abc(200px, 300px, red)
+}
+.right{
+    @include abc(200px, 300px)
+}
+
+.same {
+    width: 200px;
+    height: 200px;
+    border: 2px solid $b;
+}
+
+.cleft{
+    @extend .same;
+    background: yellow;
+}
+.cright{
+    @extend .same;
+    background: green;
+}
+
+@mixin thumb($s, $c:true)
+{
+    width: $c; height: $s;
+    @if($c)
+    {
+        border-radius: 50%;
+    }
+    @else
+    {
+        background:yellow
+    }
+}
+
+.qq
+{
+    @include thumb(300px, true)
+}
+
+$sizes: 20px, 40px, 50px, 100px;
+@each $s in $sizes
+{
+    .box-#{$s}{
+        width: $s;
+        height: $s;
+        padding: $s;
+    }
+}

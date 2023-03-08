@@ -1,0 +1,28 @@
+$b:#ccc;
+$w:400px;
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    background-color: $b;
+    width: $w;
+    height: $w;
+}
+
+nav{
+    float: left;
+    ul{
+        list-style: none;
+        li{
+            display: inline;
+            a
+            {
+                color: $b;
+                &:hover{
+                    color: yellow;
+                }
+                
+            }
+        }
+    }
+}
