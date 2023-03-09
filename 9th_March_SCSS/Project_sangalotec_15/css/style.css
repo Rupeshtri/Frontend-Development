@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+header {
+  background: #F9942A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*  justify-content: space-between; */
+}
+header .logo {
+  font-family: "Carter One", cursive;
+  font-size: 48px;
+  color: #fff;
+  margin: 0 20px;
+  width: 10%;
+}
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+header .navbar nav ul {
+  margin: 0 20px;
+  padding: 15px;
+  list-style: none;
+}
+header .navbar nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+header .navbar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+header .navbar .icon {
+  margin: 0 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+main {
+  text-align: center;
+  position: relative;
+}
+main .mh {
+  position: absolute;
+  top: 70px;
+  left: 150px;
+}
+main .mh .hero-title h1 {
+  font-family: "Bangers", cursive;
+  font-size: 75px;
+  width: 400px;
+  padding: 20px;
+  color: #fff;
+  letter-spacing: 5px;
+}
+main .mh .hero-text p {
+  font-size: 30px;
+  color: #fff;
+}
+main .mh button {
+  color: #fff;
+  background: #000;
+  border: none;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 50px;
+  width: 255px;
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */
