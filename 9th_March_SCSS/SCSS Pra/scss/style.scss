@@ -1,0 +1,20 @@
+.box{
+    background: grey;
+    padding: 60px;
+    border: 1px solid #000;
+}
+
+@mixin flex($jc){
+    display: flex;
+    justify-content: $jc;
+}
+
+.f{
+    @include flex(start)
+}
+.f1{
+    @include flex(center)
+}
+.f2{
+    @include flex(end)
+}
