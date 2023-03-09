@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+$primar-color:#ED6335;
+$background-color:#F9942A;
+
+
+header{
+    background: $background-color;
+    display: flex;
+  /*  justify-content: space-between; */
+    .logo{
+        font-family: 'Carter One', cursive;
+        font-size: 48px;
+        color: #fff;
+        margin: 0 20px;
+        width: 10%;
+    }
+    .navbar{ 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        nav{
+            ul{
+                margin: 0 20px;
+                padding: 15px;
+                list-style: none;
+                li{
+                    display: inline;
+                    margin-left: 20px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 25px;
+                    
+                    }
+                }
+            }
+        }
+        .icon{
+            margin:0 20px;
+            color: #fff;
+            font-size: 20px;
+            
+        }
+    }
+    
+    
+}
+
+main{
+    text-align: center;
+    position: relative;
+    .mh{
+        position: absolute;
+        top: 70px;
+        left: 150px;
+        .hero-title{
+            h1{
+                font-family: 'Bangers', cursive;
+                font-size: 75px;
+                width: 400px;
+                padding: 20px;
+                color: #fff;
+                letter-spacing: 5px;
+            }
+        }
+        .hero-text{
+            p{
+              font-size: 30px;
+              color: #fff;
+
+            }
+        }
+        button{
+            color: #fff;
+            background: #000;
+            border: none;
+            font-size: 30px;
+            padding: 20px;
+            border-radius: 50px;
+            width: 255px;
+            margin-top: 20px;
+        }
+    }
+}
