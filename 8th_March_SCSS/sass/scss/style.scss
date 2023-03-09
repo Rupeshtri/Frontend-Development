@@ -10,7 +10,7 @@
     @include abc(200px, 300px, red)
 }
 .right{
-    @include abc(200px, 300px)
+    @include abc(100px, 300px)
 }
 
 .same {

@@ -1,0 +1,41 @@
+header {
+  background: teal;
+  font-size: 30px;
+  color: #fff;
+} /* mixin */
+body * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body .container h1 {
+  background: lightblue;
+  color: #000;
+  margin: 10px 0;
+  padding: 10px;
+}
+body .container p {
+  background: teal;
+  color: #fff;
+  font-size: 25px;
+  margin: 10px 0;
+  padding: 20px;
+}
+body .container button {
+  background: tomato;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
+body .container button:hover {
+  background: teal;
+}
+body footer {
+  background: lightblue;
+  color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+}/*# sourceMappingURL=style.css.map */

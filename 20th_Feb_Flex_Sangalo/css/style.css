@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=PT+Sans&family=Roboto:wght@300&family=Rubik+Gemstones&family=Source+Sans+Pro:wght@200&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mukta:wght@300&family=PT+Sans&family=Roboto:wght@300&family=Rubik+Gemstones&family=Source+Sans+Pro:wght@200&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    font-family:'Roboto', sans-serif ;
+}
+.con{
+    width: 1100px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.flex p{
+    padding: 5px;
+    font-size: 12px;
+}
+.top{
+    background:#FEF7F6 ; 
+    line-height: 40px;
+   
+}
+.ilist{
+    list-style: none;
+    gap: 8px;
+    padding: 5px;
+    font-size: 12px;
+}
+header{
+    padding: 25px 0;
+}
+header nav ul li{
+    list-style: none;
+    gap: 10px;
+}
+header nav ul a {
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px;
+    color: #000;
+    
+}
+header nav ul{
+    gap: 8px;
+}
+
+.bg1{
+    background-image: url(https://sangalotech.com/html/03/images/bg-1.jpg);
+    height: 400px;
+}
+.bleft{
+    width: 50%;
+    text-align: center;
+   padding: 10px;
+}
+.bright{
+    width: 48%;
+    
+}
+.bleft h1{
+    font-size: 45px;
+    
+}
+.heading1 h3{
+    text-align: center;
+    padding: 20px ;
+    margin: 45px;
+    font-size: 25px;
+    font-weight: bold ;
+    line-height: 1.2px;
+    
+}
+.row{
+    padding: 20px;
+}
+.col{
+    width: 30%;
+   /*  padding: 15px; */
+    text-align: center;
+}
+.col  h5{
+    
+    color: #807e7e;
+}
+.col   p{
+    color: red;
+    
+}
+.col h6{
+    font-size: 15px;
+}
+.col1  h5{
+    
+    color: #807e7e;
+}
+.col1   p{
+    color: red;
+    
+}
+.col1 h6{
+    font-size: 15px;
+}
+ .trow  h5{
+    
+    color: #807e7e;
+}
+ .trow  p{
+    color: red;
+    
+}
+ .trow h6{
+    font-size: 15px;
+}
+
+.bg2{
+    background:#EAE2D8 ;
+    height: 400px;
+}
+.bgleft{
+    text-align: center;
+    width: 50%;
+   padding: 50px;
+
+}
+.bgleft h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+.bgleft h4{
+    margin: 30px;
+    font-weight: lighter;
+    font-size: larger;
+}
+.bgleft button{
+   background:#FF5353 ;
+   width: 150px;
+   padding: 10px;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   font-weight: bold;
+   margin: 20px;
+}
+.col1{
+    text-align: center;
+    width: 25%;
+    padding:10px;
+}
+.png1{
+    width: 25%;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 35px;
+}
+.png1,img, h5, p{
+   margin: 5px;
+}
+.png1 p{
+    color:  #646363;
+}
+.row1{
+    
+}
+.trow{
+    text-align: center;
+    width: 20%;
+    margin:  10px;
+}
+footer{
+    background: #E9E2D8;
+    padding: 20px;
+    margin-top: 30px;
+}
+.ff{
+    /* text-align: center; */
+    padding: 20px;
+}
+.ff h4{
+    margin:10px ;
+}
+.ff li{
+    list-style: none;
+    margin: 10px;
+    color:   #807e7e;
+    font-size: 15px;
+}
+.copyright{
+    color:#807e7e ;
+    text-align: center;
+    font-size: 13px;
+}

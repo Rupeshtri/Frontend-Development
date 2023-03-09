@@ -2,15 +2,18 @@
 
 @import 'variables';
 @import 'header';
+/* mixin */
 
 body{
     *{margin: 0; padding: 0; box-sizing: border-box;}
 
+
+   
     
     .container{
         h1{
             background: $secondary-color;
-            color: #fff;
+            color:#000;
             margin: 10px 0;
             padding: 10px;
         }

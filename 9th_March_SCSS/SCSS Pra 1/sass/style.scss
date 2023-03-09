@@ -1,0 +1,43 @@
+
+
+@mixin res($min, $max){
+    @media(min-width: $min) and (max-width:$max){
+        @content;
+    }
+}
+@mixin flex($jc){
+    display: flex;
+    justify-content: $jc
+}
+
+.box{
+    background: grey;
+    padding: 40px;
+    border: 5px solid #000;
+    @include res(0px, 480px){
+        background: green;
+    }
+
+    @include res(481px, 992px){
+        background: yellow
+    }
+    
+}
+
+.f{
+    @include flex(start);
+    @include res(0px, 480px){
+        @include flex(space-between);
+    }
+    
+}
+
+
+.f1{
+    @include flex(center);
+    
+}
+
+.f2 {
+    @include flex(end);
+}
