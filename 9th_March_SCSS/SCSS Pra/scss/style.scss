@@ -1,20 +1,49 @@
-.box{
-    background: grey;
-    padding: 60px;
-    border: 1px solid #000;
-}
 
 @mixin flex($jc){
     display: flex;
     justify-content: $jc;
 }
 
+@mixin res( $min:0px, $max:480px)
+{
+    @media ( min-width: $min) and (max-width:$max){
+        @content;
+    }
+}
+
+.box{
+    background: grey;
+    padding: 20px;
+    border: 1px solid #000;
+    @include res{
+        background: green;
+    }
+    @include res (481px, 992px){
+        background: yellow;
+    }
+   
+}
+
 .f{
-    @include flex(start)
+    @include flex(start);
+    @include res
+    {
+        @include flex(space-between)
+    }
 }
 .f1{
-    @include flex(center)
+    @include flex(center);
+    @include res
+    {
+        @include flex(space-between)
+    }
 }
 .f2{
-    @include flex(end)
+    @include flex(end);
+    @include res
+    {
+        @include flex(space-between)
+    }
 }
+
+
