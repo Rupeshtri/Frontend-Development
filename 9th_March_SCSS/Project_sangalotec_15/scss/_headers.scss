@@ -1,0 +1,43 @@
+header{
+    background: $background-color;
+    display: flex;
+  /*  justify-content: space-between; */
+    .logo{
+        font-family: 'Carter One', cursive;
+        font-size: 48px;
+        color: #fff;
+        margin: 0 20px;
+        width: 10%;
+    }
+    .navbar{ 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        nav{
+            ul{
+                margin: 0 20px;
+                padding: 15px;
+                list-style: none;
+                li{
+                    display: inline;
+                    margin-left: 20px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 25px;
+                    
+                    }
+                }
+            }
+        }
+        .icon{
+            margin:0 20px;
+            color: #fff;
+            font-size: 20px;
+            
+        }
+    }
+    
+    
+}
