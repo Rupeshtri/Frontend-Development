@@ -1,0 +1,12 @@
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin res($min:0px, $max:480px) {
+    @media (min-width: $min)  and (max-width: $max){
+        @content;
+    }
+}
