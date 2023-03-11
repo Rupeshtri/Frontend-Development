@@ -1,1 +1,229 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 100%;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+body {
+  line-height: 1;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background: #000;
+  color: rgb(255, 255, 255);
+  padding: 10px 25px;
+  border-radius: 40px;
+  display: inline-block; /* .btn anchor tag ko class ho, so anchor tag is in 
+line element */
+}
+
+.title {
+  font-size: 2.7rem;
+  font-weight: 700;
+  text-align: center;
+}
+.title span {
+  color: rgb(237, 99, 53);
+}
+
+.hero {
+  background: url("../image/hero-banner.jpg") no-repeat;
+  padding: 25px 25px 160px 25px;
+  color: rgb(255, 255, 255);
+}
+.hero header {
+  color: rgb(255, 255, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.hero header .logo {
+  font-size: 2.2rem;
+  font-family: "Carter One", cursive;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .hero header .logo {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+.hero header nav {
+  margin-right: auto;
+  padding-left: 30px;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .hero header nav {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0;
+  }
+}
+.hero header nav span {
+  font-size: 33px;
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .hero header nav span {
+    display: block;
+  }
+}
+.hero header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .hero header nav ul {
+    display: none;
+  }
+}
+.hero header nav a {
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .hero header .icon {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+.hero-text { /* & joins to its parent .hero , so no need to write .hero-text */
+  text-align: center;
+  max-width: 70%;
+  font-family: "Bangers", cursive;
+  padding: 10% 9%;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .hero-text {
+    max-width: 100%;
+  }
+}
+.hero-text h3 {
+  font-size: 4rem;
+}
+.hero-text h1 {
+  font-size: 8rem;
+}
+.hero-text p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  padding: 10px 0;
+}
+
+.category {
+  padding: 30px;
+}
+.category .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px 0;
+  gap: 10px;
+}
+.category .flex .cat-box {
+  width: 19%;
+}
+.category .flex .cat-box img {
+  width: 100%;
+}
+.category .flex .cat-box h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 10px 0;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .category .flex .cat-box {
+    display: block;
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,100 @@
+
+
+.hero{
+    background: url('../image/hero-banner.jpg') no-repeat;
+    padding: 25px 25px 160px 25px;
+    color: $w;
+
+    header{
+        color: $w;
+        @include flex;
+        .logo{
+            font-size: 2.2rem;
+            font-family: $f1;
+            @include res{
+                order: 2;
+                
+            }
+        }
+        nav{
+            margin-right: auto;
+            padding-left:30px ;
+            @include res{
+                order: 1;
+                margin: 0;
+            }
+            span{
+                font-size: 33px;
+                display: none;
+                @include res{
+                    display: block
+                }
+            }
+            ul{
+                @include flex;
+                gap: 20px;
+                @include res{
+                    display: none
+                }
+            }
+            a{
+                color: $w;
+                font-size: 1.1rem;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+        .icon{
+            @include res{
+                order: 3;
+            }
+        }
+    }
+    &-text{   /* & joins to its parent .hero , so no need to write .hero-text */
+        text-align: center;
+        max-width: 70%;
+        font-family: $f2;
+        padding: 10% 9%;
+        @include res{
+            max-width: 100%;
+        }
+        h3{
+           font-size: 4rem;
+        }
+        h1{
+            font-size: 8rem;
+        }
+        p{
+            font-family: $f;
+            font-size: 1.6rem;
+            padding: 10px 0;
+        }
+
+    }
+    
+}
+
+.category{
+    padding: 30px;
+    .flex{
+        @include flex;
+        padding: 30px 0;
+        gap: 10px;
+        .cat-box{
+            width: 19%;
+            img{
+                width: 100%;
+            }
+            h3{
+                font-size: 1.3rem;
+                text-align: center;
+                padding: 10px 0;
+            }
+            @include res{
+                display: block;
+                width: 100%;
+            }
+        }
+        
+    }
+}

@@ -24,8 +24,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+	font-size: 100%;
+	@include res{
+		font-size: 80%;
+	}
+}
 body {
 	line-height: 1;
+	font-family: $f;
 }
 ol, ul {
 	list-style: none;
@@ -45,4 +52,25 @@ table {
 
 *{
     box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+
+.btn{
+	background: #000;
+	color: $w;
+	padding: 10px 25px;
+	border-radius: 40px;
+	display: inline-block; /* .btn anchor tag ko class ho, so anchor tag is in 
+	line element */
+}
+
+.title{
+	font-size: 2.7rem;
+	font-weight: 700;
+	text-align: center;
+	span{
+		color: $o;
+	}
 }
