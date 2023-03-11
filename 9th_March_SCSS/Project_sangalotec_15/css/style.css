@@ -43,8 +43,10 @@ header .navbar nav ul li a {
 }
 header .navbar .icon {
   margin: 0 20px;
-  color: #fff;
   font-size: 20px;
+}
+header .navbar .icon a {
+  color: #fff;
 }
 
 * {
