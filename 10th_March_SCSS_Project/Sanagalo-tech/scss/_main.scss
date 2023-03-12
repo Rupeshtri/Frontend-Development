@@ -98,3 +98,77 @@
         
     }
 }
+
+.category-two{
+    padding: 30px;
+    .flex{
+        @include flex;
+        padding: 30px 0;
+        gap: 10px;
+        .cat-box{
+            width: 24%;
+            img{
+                width: 100%;
+            }
+            h3{
+                font-size: 1.3rem;
+                font-weight: 700;
+                text-align: center;
+                padding: 10px 0;
+            }
+            @include res{
+                display: block;
+                width: 100%;
+            }
+            .price{
+                font-size: 1.5rem;
+                font-weight: 700;
+                text-align: center;
+                padding: 10px 0;
+                color:$o ;
+            }
+            @include res{
+                display: block;
+                width: 100%;
+            }
+        }
+        
+    }
+}
+
+.last-part{
+    text-align: center;
+    h1{
+        font-weight: 700;
+        font-size: 4rem;
+        padding: 10px 0;
+        span{
+            color: $o;
+        }
+    }
+}
+
+.last-part-two{
+    padding: 30px;
+    .flex{
+        @include flex;
+        padding: 30px 0;
+        gap: 10px;
+        .cat-box{
+            width: 23%;
+            img{
+                width: 100%;
+            }
+            h3{
+                font-size: 1.3rem;
+                text-align: center;
+                padding: 10px 0;
+            }
+            @include res{
+                display: block;
+                width: 100%;
+            }
+        }
+        
+    }
+}
