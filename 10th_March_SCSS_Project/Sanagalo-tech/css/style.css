@@ -226,4 +226,102 @@ line element */
     display: block;
     width: 100%;
   }
+}
+
+.category-two {
+  padding: 30px;
+}
+.category-two .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px 0;
+  gap: 10px;
+}
+.category-two .flex .cat-box {
+  width: 24%;
+}
+.category-two .flex .cat-box img {
+  width: 100%;
+}
+.category-two .flex .cat-box h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .category-two .flex .cat-box {
+    display: block;
+    width: 100%;
+  }
+}
+.category-two .flex .cat-box .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0;
+  color: rgb(237, 99, 53);
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .category-two .flex .cat-box {
+    display: block;
+    width: 100%;
+  }
+}
+
+.last-part {
+  text-align: center;
+}
+.last-part h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  padding: 10px 0;
+}
+.last-part h1 span {
+  color: rgb(237, 99, 53);
+}
+
+.last-part-two {
+  padding: 30px;
+}
+.last-part-two .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px 0;
+  gap: 10px;
+}
+.last-part-two .flex .cat-box {
+  width: 23%;
+}
+.last-part-two .flex .cat-box img {
+  width: 100%;
+}
+.last-part-two .flex .cat-box h3 {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 10px 0;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .last-part-two .flex .cat-box {
+    display: block;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
