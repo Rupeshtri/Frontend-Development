@@ -1,0 +1,8 @@
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 20px;
+    font-size: 30px;
+}
+
+.bg-primary{
+    background: red !important;
+}
