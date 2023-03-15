@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
+body {
+  font-family: "Nunito", sans-serif;
+}
+body .hero {
+  background: url("../image/bg2.png");
+  background-size: cover;
+  height: 100vh;
+}
+body .hero .navbar-brand {
+  width: 150px;
+}
+body .navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+  padding: 20px;
+}
+body .nav-pills {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .nav-pills img {
+  width: 40px;
+}
+body .nav-pills .nav-link.active {
+  color: #000;
+  background: transparent;
+}
+body .nav-pills .nav-link.active .img {
+  background: #B71C1C;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
