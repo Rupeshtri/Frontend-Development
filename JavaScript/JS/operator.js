@@ -82,3 +82,12 @@ console.log((age>=18) ? "you are aduld" : "you are not adult yet") */
 // }
 
 
+//Switch case
+var abc = 2;
+switch(abc) {
+    case 1 : console.log("today is monday");break;
+    case 2: console.log("today is thursday");break;
+    case 3: console.log("today is friday");break;
+    default : console.log("Unknown Days");break;
+}
+
