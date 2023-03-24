@@ -10,6 +10,11 @@ console.log(typeof num);
 var abc=true;
 console.log(typeof abc);
 document.write('Hello World, How are you?') */
+document.write("hello world </br>" );
+document.write("<b><i> I am Rupesh </i></b> ");
+document.write("<div> This is div  </div>");
+document.write("<section> This is another div section </section>");
+
 
 
 
