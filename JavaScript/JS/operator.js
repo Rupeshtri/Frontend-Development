@@ -55,9 +55,14 @@
 // }
 
 //ternary operator
+//Syntax 
+//condition ? ecpression if True : expression if False
+// var age = 20;
+// var beverage = age>=21 ? "Beer":"Juice";
+// console.log(beverage);
 //console.log((2>3)? "This is true" : "This is false");
 
-//example ask to teacher why tis is not working.
+//example ask to teacher why this is not working.
 
 /* const age = prompt("Your name?");
 console.log((age>=18) ? "you are aduld" : "you are not adult yet") */
