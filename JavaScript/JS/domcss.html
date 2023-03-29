@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="a">This is demo</h1>
+    <button onclick="document.getElementById('a').style.display='none'  ">Hide</button>
+    <button onclick="document.getElementById('a').style.display='block'  ">Show</button>
+    <button onclick="document.getElementById('a').style.background='red'  ">BG</button>
+    <button onclick="document.getElementById('a').style.fontSize='112px'  ">Fontsize</button>
+    <button onclick="document.getElementById('a').style.fontSize='112px'  ">Fontsize</button>
+
+<br>
+<button id="m" onclick="q()">Show</button>
+<ul id="n" style="display:none ;">
+    <li>Home</li>
+    <li>Profile</li>
+</ul>
+
+<script>
+    function q()
+    {
+        if(document.getElementById('n').style.display=='none'){
+            document.getElementById('n').style.display=='block'
+            document.getElementById('m').innerText='Hide'
+        }else{
+            document.getElementById('n').style.display=='block'
+            document.getElementById('m').innerText='show'
+        }
+        
+
+
+    }
+</script>
+<style>
+.q{display: none;}
+</style>
+<h1 id="o">This is Demo</h1>
+<button onclick="document.querySelector('#o').classList.add('q')">Add Class</button>
+<button onclick="document.querySelector('#o').classList.remove('q')">Remove Class</button>
+<button onclick="document.querySelector('#o').classList.toggle('q')">toggleClass</button>
+
+</body>
+</html>
