@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="a.jpg" alt="">
+    <img src="b.jpg" alt=""> 
+    <a href="fb.com">Facebook</a>
+    <a href="tw.com">Twitter</a>
+
+    <div id="sajan">
+        <h1>This is demo</h1>
+    </div>
+    <div class="sajan">
+        <h1>This is second</h1>
+    </div>
+    <h4>sajan sir</h4>
+<script>
+    var a;
+    a=document.all;
+    console.log(a);
+    a = document.title ='Rupesh';
+    console.log(a);
+    a =document.images[0].src= 'fb.com';
+    console.log(a);
+    a=document.links[0].href ='qq.com';
+    console.log(a);
+    a=document.getElementById('sajan').innerHTML ='<h1>This is rupesh</h1>';
+    console.log(a);
+    a=document.getElementsByClassName('sajan')[0].innerText ='<h1>This is tripathi</h1>';
+    console.log(a);
+    a=document.getElementsByTagName('h4')[0].innerText ='<h1>CHANGE</h1>';
+    console.log(a);
+
+</script>
+</body>
+</html>
