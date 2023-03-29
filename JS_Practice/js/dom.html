@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagar</title>
+    <style>
+
+        a{text-decoration: none; color: aliceblue;}
+        button{
+            border: none;
+            padding:5px 15px;
+            border-radius: 20px;
+        }
+
+        .na{
+            margin: 0 auto;
+            width: 600px;
+        }
+       .na ul li{
+            list-style: none;
+            padding: 5px 20px;
+        }
+        #j {
+            display: none;
+            justify-content: space-evenly;
+           gap: 20px;
+           background: red;
+          
+        }
+       
+        #cb{
+           
+            padding:10px 20px;
+            background: red;
+            /* border-radius: ; */
+            color: aliceblue;
+        }
+        .q{display: none;}
+       .m{display: none;}
+        
+       
+    </style>
+</head>
+<body>
+
+
+    <div class="na">
+        <nav >
+            <ul class="jj" id="j">
+               
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Profile</a></li>
+            </ul>
+        </nav>
+        <button onclick="cc()" id="cb">Menu</button>
+    </div>
+    <script>
+        
+    
+    </script>
+
+
+    <h1 class="h">Hello World</h1>
+    <h2 id="g">Hello Rupesh</h2>
+
+    <h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+
+    <div style="display:flex; justify-content: center; gap: 10px; text-align: center;" >
+       <div>
+            <img src="../image/1.jpg" alt="">
+           <div> <a href="fb.com">FB</a></div>
+        </div>
+        <div>
+            <img src="../image/8.jpg" alt="">
+            <div><a href="tw.com">Twitter</a></div>
+        </div>
+    </div>
+    <div class="cl" style="margin: 0 auto; width: 200px; text-align: center;">
+        <h3>Images</h3>
+        <a href=""><img class="im" src="../image/4.jpg" width="" alt=""></a>
+        
+    </div>
+
+    
+    <div style="text-align: center;">
+        <button onclick="document.getElementsByClassName('cl')[0].style.display='none' ">Hide</button>
+        <button onclick="document.getElementsByClassName('cl')[0].style.display='block' ">Show</button>
+        <button onclick="document.images[2].src= '../image/4.jpg' ">Bg Change</button>
+        <button onclick="kk()">ALL</button>
+        
+    </div>
+    <script>
+        function kk(){
+            document.body.style.background = '#CCD5AE';
+            document.body.style.color = 'red';
+            document.getElementsByTagName('button')[0].style.color = 'red';
+            document.getElementsByTagName('button')[1].style.color = 'red';
+            document.getElementsByTagName('button')[2].style.color = 'red';
+            document.getElementsByTagName('button')[3].style.color = 'red';
+
+            document.getElementsByTagName('button')[0].style.backgroundColor = '#D5B4B4';
+            document.getElementsByTagName('button')[1].style.backgroundColor = '#D5B4B4';
+            document.getElementsByTagName('button')[2].style.backgroundColor = '#D5B4B4';
+            document.getElementsByTagName('button')[3].style.backgroundColor = '#D5B4B4';
+            }
+    </script>
+    <hr>
+    <button id="b" onclick="q()">Show</button>
+    <ul id="hi" style="display: none;">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Profile</li>
+    </ul>
+    <script>
+        function q(){ 
+
+            if( document.getElementById('hi').style.display=='none'  ){
+                    document.getElementById('hi').style.display='block'
+                    document.getElementById('b').innerText='Hide'
+            }else{
+                document.getElementById('hi').style.display='none'
+                document.getElementById('b').innerText='Show'
+            }
+            
+        }
+    </script>
+    <hr>
+    
+    <h1 id="o">Hello This is demo</h1>
+    <button onclick="document.querySelector('#o').classList.add('q')">Add Class</button>
+    <button onclick="document.querySelector('#o').classList.remove('q')">Remove Class</button>
+    <button onclick="document.querySelector('#o').classList.toggle('q')">Toggle Class</button>
+
+<hr>
+    <h2 id="k">Hello Guten Morgen</h2>
+    <button onclick="document.querySelector('#k').classList.add('m')">ad Me</button>
+    <button onclick="document.querySelector('#k').classList.remove('m')">Click Me</button>
+
+    <button onclick="document.querySelector('#k').classList.toggle('m')">Click Me</button>
+
+<hr>
+    <script src="./dom.js"></script>
+</body>
+</html>

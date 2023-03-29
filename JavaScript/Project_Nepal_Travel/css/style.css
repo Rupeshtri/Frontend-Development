@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+body .nai {
+  background-image: url("../Image/lake-g60fba6fd1_1920.jpg");
+}
+body .nai ul li a {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
