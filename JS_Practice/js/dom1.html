@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{}
+        .bar1, .bar2, .bar3 {
+                width: 30px;
+                height: 5px;
+                background-color: #333;
+                margin: 6px 0;
+                transition: 0.4s;
+                }        
+        .ch .bar1 {transform: translate(0, 11px) rotate(-45deg);}
+        .ch .bar2 {opacity: 0;}
+        .ch .bar3 {transform: translate(0, -11px) rotate(45deg);}
+        .abc{width: 230px; background: blue; height: 100%; position: fixed; left: 0; top: 0; margin-left: -230px; transition: 0.9s;}
+        .qq{ margin-left: 0;}
+        .qqq{ margin-left: 230px;}
+        #n{transition: 0.9s;}
+    </style>
+</head>
+<body>
+    <!-- again practice it -->
+    <div id="n">
+        <div class="con" onclick="aa(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="abc"></div>
+    </div>
+    <script>
+        function aa(q){
+            q.classList.toggle('ch')
+            document.querySelector('.abc').classList.toggle('qq')
+            document.querySelector('#n').classList.toggle('qqq')
+
+        }
+    </script>
+</body>
+</html>
