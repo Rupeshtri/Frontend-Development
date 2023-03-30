@@ -5,12 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .ss{background: blue;}
+    </style>
 </head>
 <body>
     <h1>This is demo</h1>
+    <button class="a">Hide</button>
+    <button class="b">Show</button>
+    <button class="c">Toggle</button>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-        $('h1').hide();
+        $('.a').click(function(){
+            $('h1').hide()
+        })
+        $('.b').click(function(){
+            $('h1').show()
+        })
+        $('.c').click(function(){
+            $('h1').toggle()
+        })
     </script>
+<hr>
+    <h1 id="q">This is Demo</h1><br>
+    <button class="d">Slide Up</button>
+    <button class="e">Slide Down</button>
+    <button class="f">Slide Toggle</button>
+    <button class="g">Fade Out</button>
+    <button class="h">Fade In</button>
+    <button class="i">Fade Toggle</button>
+<hr>
+    <h1 id="qq">This is Demo</h1><br>
+    <button class="j">Append</button>
+    <button class="k">Prepend</button>
+    <button class="l">Before</button>
+    <button class="m">After</button>
+<hr>
+    <h1 id="qqq">This is Demo</h1><br>
+    <button class="n">Add Class</button>
+    <button class="o">Remove Class</button>
+    <button class="p">Toggle Class</button>
+    <button class="r">CSS</button>
+    
+<hr><!-- remove, empty -->
+
+
+<hr><!-- html, text -->
+    <h1 id="ab">This is Demo</h1><br>
+    <button class="u">HTML</button>
+    <button class="v">TEXT</button>
+    <button class="w">fx inside Alertfx</button>
+
+
+
+
+    <script>
+        /* slideUp, slideDown, slideToggle, fadeIn, fadeOut, fadeToggle */
+        $('.d').click(function(){
+            $('#q').slideUp()
+        })
+        $('.e').click(function(){
+            $('#q').slideDown()
+        })
+        $('.f').click(function(){
+            $('#q').slideToggle()
+        })
+        $('.g').click(function(){
+            $('#q').fadeOut()
+        })
+        $('.h').click(function(){
+            $('#q').fadeIn()
+        })
+        $('.i').click(function(){
+            $('#q').fadeToggle()
+        })
+
+        /* append prepend,  after, before */
+
+        $('.j').click(function(){
+            $('#qq').append('<input>')
+        })
+        $('.k').click(function(){
+            $('#qq').prepend('<p>Hello</p>')
+        })
+        $('.l').click(function(){
+            $('#qq').before('hi')
+        })
+        $('.m').click(function(){
+            $('#qq').after('hii')
+        })
+
+        /* addClass, removeClass, toggleClass, css */
+        $('.n').click(function(){
+            $('#qqq').addClass('ss')
+        })
+        $('.o').click(function(){
+            $('#qqq').removeClass('ss')
+        })
+        $('.p').click(function(){
+            $('#qqq').toggleClass('ss')
+        })
+        $('.r').click(function(){
+            $('#qqq').css() // pending
+        })
+
+        /* remove, empty */
+
+        /* html, text, fx inside fx */
+        $('.u').click(function(){
+            $('#ab').html('<span>html chnge</span>')
+        })
+        $('.v').click(function(){
+            $('#ab').text('<span>html chnge</span>')
+        })
+        $('.w').click(function(){
+            $('#ab').fadeOut(function(){
+                alert('hey')
+            })
+        })
+
+    </script>
+
+
+
+
+
 </body>
 </html>
