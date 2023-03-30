@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .ab{display: none;} */
+        .ss{color: red; background: grey;}
+    </style>
+</head>
+<body>
+    <h1 id="a">This is heading</h1>
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+    <button class="toggle">Toggle</button>
+    <!--button for pure js toogle function described in script tag below -->
+
+    <!--  <button class="c">Toggle</button> -->
+    <hr>
+    <h1 id="q">This is Demo</h1><br>
+    <button class="d">Slide Up</button>
+    <button class="e">Slide Down</button>
+    <button class="f">Slide Toggle</button>
+    <button class="g">Fade Out</button>
+    <button class="h">Fade In</button>
+    <button class="i">Fade Toggle</button>
+<hr>
+    <h1 id="qq">This is Demo</h1><br>
+    <button class="j">Append</button>
+    <button class="k">Prepend</button>
+    <button class="l">Before</button>
+    <button class="m">After</button>
+<hr>
+    <h1 id="qqq">This is Demo</h1><br>
+    <button class="n">Add Class</button>
+    <button class="o">Remove Class</button>
+    <button class="p">Toggle Class</button>
+    <button class="r">CSS</button>
+    
+<hr><!-- remove, empty -->
+    <h1 id="bc">Hello Remove & Empty</h1>
+    <button class="s">Remove</button>
+    <button class="t">Empty</button>
+
+<hr><!-- html, text -->
+    <h1 id="ab">This is Demo</h1><br>
+    <button class="u">HTML</button>
+    <button class="v">TEXT</button>
+    <button class="w">fx inside Alertfx</button>
+   
+
+
+
+
+   
+       
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+
+        /* hide, show, toggle  */
+        $('.hide').click(function(){
+            $('#a').hide()
+        })
+        $('.show').click(function(){
+            $('#a').show()
+        })
+        $('.toggle').click(function(){
+            $('#a').toggle()
+        })
+
+       // toggle with pure java script with class .ab with css style display none
+        /* document.querySelector('.c').addEventListener('click' , ab)
+        function ab(){
+        document.querySelector('h1').classList.toggle('ab')
+            } */
+
+        /* slideUp, slideDown, slideToggle, fadeIn, fadeOut, fadeToggle */
+        $('.d').click(function(){
+            $('#q').slideUp()
+        })
+        $('.e').click(function(){
+            $('#q').slideDown()
+        })
+        $('.f').click(function(){
+            $('#q').slideToggle()
+        })
+        $('.g').click(function(){
+            $('#q').fadeOut()
+        })
+        $('.h').click(function(){
+            $('#q').fadeIn()
+        })
+        $('.i').click(function(){
+            $('#q').fadeToggle()
+        })
+
+        /* append prepend,  after, before */
+
+        $('.j').click(function(){
+            $('#qq').append('<input>')
+        })
+        $('.k').click(function(){
+            $('#qq').prepend('<p>Hello</p>')
+        })
+        $('.l').click(function(){
+            $('#qq').before('hi')
+        })
+        $('.m').click(function(){
+            $('#qq').after('hii')
+        })
+
+        /* addClass, removeClass, toggleClass, css */
+        $('.n').click(function(){
+            $('#qqq').addClass('ss')
+        })
+        $('.o').click(function(){
+            $('#qqq').removeClass('ss')
+        })
+        $('.p').click(function(){
+            $('#qqq').toggleClass('ss')
+        })
+        $('.r').click(function(){
+            $('#qqq').css({'background-color': 'yellow', 'font-size': '35px', 'color':'green'}) 
+        })
+
+        /* remove, empty */ 
+        //remove: removes all the content with h1 tag.
+        //empty : removes content only not tag
+        $('.s').click(function(){
+            $('#bc').remove()
+        })
+        $('.t').click(function(){
+            $('#bc').empty()
+        })
+
+        /* html, text, fx inside fx */
+        $('.u').click(function(){
+            $('#ab').html('<span>html chnge</span>')
+        })
+        $('.v').click(function(){
+            $('#ab').text('<span>html chnge</span>')
+        })
+        $('.w').click(function(){
+            $('#ab').fadeOut(function(){
+                alert('hey')
+
+            })
+        })
+    </script>
+</body>
+</html>
