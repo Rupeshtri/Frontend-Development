@@ -20,29 +20,47 @@ body{
 
 .pp{    display:none ;
         width:63px ;}
-.youtube{position: fixed;
+.youtube{
          
         position: fixed;
-    bottom: 0;   
-    left: 0;
-    width: 300px; 
-    z-index: 10;
-    border-radius: 5px;}
+        bottom: 0;   
+        left: 0;
+        width: 300px; 
+        z-index: 10;
+        border-radius: 5px;
+    }
 
     
     
 .clo{
     position: absolute;
     font-size: 20px;
-    top: 0px;
-    right: 0px;
+    top: -3px;
+    right: -3px;
     color: #000;
     background-color: #fff;
     border-radius: 50%;
     z-index: 11;
 }
 
+.arrow{
+    height: 50px;
+    width: 40px;
+    padding: 5px;
+    color: #fff;
+    background: red;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 15;
+    text-align: center;
+    margin: auto 0;
+    border-radius: 5px;
+}
 
+html{
+    scroll-behavior: smooth;
+}
   
     
 
