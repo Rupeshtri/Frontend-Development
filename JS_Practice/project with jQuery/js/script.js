@@ -13,13 +13,16 @@ $(window).scroll(function(){
 $(window).scroll(function(){
     if($(this).scrollTop()>350)
     {
-          $('.yt').show(400);
+          $('.yt').show(); 
     }
    else 
    {
-     $('.yt').hide(400);
+     $('.yt').hide();
 
    }
 })
 
+$('.clo').click(function(){
+  $('.youtube').hide()
+})
  
