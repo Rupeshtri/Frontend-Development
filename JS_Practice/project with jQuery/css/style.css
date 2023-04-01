@@ -20,16 +20,17 @@ body{
 
 .pp{    display:none ;
         width:63px ;}
-.youtube{position: relative;
-         width: 300px;}
-.yt{
-    position: fixed;
+.youtube{position: fixed;
+         
+        position: fixed;
     bottom: 0;   
     left: 0;
     width: 300px; 
     z-index: 10;
-    border-radius: 5px;
-    }
+    border-radius: 5px;}
+
+    
+    
 .clo{
     position: absolute;
     font-size: 20px;
